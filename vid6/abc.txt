@@ -1,0 +1,1 @@
+variable name and file name can be different and we imported particular method i.e. writeFileSync from file system not all methods 

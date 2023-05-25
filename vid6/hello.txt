@@ -1,0 +1,1 @@
+this is text in the newly created hello file which is in same folder
