@@ -13,7 +13,7 @@ app.get('/', (res, resp) => {
 app.get('/users', (res, resp) => {
     resp.send('Welcome to Users page')
 });
-
+//http://localhost:4500/about/?age=20 give age using params as follows
 route.get('/about', (res, resp) => {
     resp.send('Welcome to About page')
 });
@@ -23,4 +23,4 @@ route.get('/contact', (res, resp) => {
 
 app.use('/',route);
 
-app.listen(4506)
+app.listen(4500)

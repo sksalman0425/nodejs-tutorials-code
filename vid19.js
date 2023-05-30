@@ -4,7 +4,7 @@ const app = express();
 app.get("", (req, resp) => {
     //req variable contain data sent by browser to server
     //resp variable contain data sent by server to browser
-    // sent data from browser like http://localhost:4600/?name=salman
+    // sent data from browser like http://localhost:4500/?name=salman
     console.log(req.query.name)// data show in nodejs terminal
     resp.send("Welcome,"+req.query.name); // data show on the webpage
 });
@@ -18,4 +18,4 @@ app.get("/help", (req, resp) => {
 });
 
 
-app.listen(4600);
+app.listen(4500);

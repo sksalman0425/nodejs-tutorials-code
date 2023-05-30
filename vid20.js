@@ -7,7 +7,7 @@ app.get("", (req, resp) => {
     <a href="/about">Go to About page</a>
     `);
 });
-
+// for below code send http://localhost:4500/about/?name=salman in url
 app.get("/about", (req, resp) => {
     resp.send(`
     <input type="text" placeholder="user name" value="${req.query.name}"   />
@@ -30,4 +30,4 @@ app.get("/help", (req, resp) => {
 });
 
 
-app.listen(4700);
+app.listen(4500);

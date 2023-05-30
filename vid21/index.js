@@ -6,8 +6,8 @@ const publicPath=path.join(__dirname,'public')
 
 app.use(express.static(publicPath));
 
-app.listen(4501);
+app.listen(4500);
 //note: .html is compulsary
-// localhost:4501  => for index.html page
-// localhost:4501/about.html
-// localhost:4501/help.html
+// localhost:4500  => for index.html page
+// localhost:4500/about.html
+// localhost:4500/help.html

@@ -1,11 +1,15 @@
 const express = require('express');
 const path = require('path');
-
+const ejs = require('ejs');
 const app = express();
 const publicPath=path.join(__dirname,'public')
 //first import ejs package
 // set() have first arg view engine for using any template engine and 2nd arg is template engine name 
 app.set('view engine','ejs');
+
+// const viewsPath = path.join(__dirname, 'views');
+// app.set('views', viewsPath);
+
 app.get('',(_,resp)=>{
     resp.sendFile(`${publicPath}/index.html`)
 });
@@ -34,4 +38,4 @@ app.get('*',(_,resp)=>{
 
  
 
-app.listen(4503);
+app.listen(4500);

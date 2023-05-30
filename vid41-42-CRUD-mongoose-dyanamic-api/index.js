@@ -3,13 +3,14 @@ require("./config");
 const Product = require('./product');
 const app = express();
 
-app.use(express.json());
+app.use(express.json());//data from request converted into JSON
+//here we go to particular url using postman and send data in body and check that data save in db or not
 app.post("/create", async (req, resp) => {
     let data = new Product(req.body);
     const result = await data.save();
     resp.send(result);
 });
-
+//usimg postman tool just go to the url link and you will get all user details
 app.get("/list", async (req, resp) => {
     let data = await Product.find();
     resp.send(data);

@@ -1,7 +1,9 @@
  console.log(process.argv);
 //  above line after execution give two input
-//  1) Nodejs.exe location
-//  2) location of file from where we are running above METHODS
+// [
+//    0 position 'C:\\Program Files\\nodejs\\node.exe', i.e.  1) Nodejs.exe location
+//    1 position 'D:\\web devlopment\\Github\\nodejs-tutorials-code\\vid12' i.e.2) location of file from where we are running above METHODS
+//   ]
 //   above two input position are fixed fixed in array
 //   after that what we are giving from cli it give third position and so on ..
 // e.g >> node .\index.js hello hi salman
